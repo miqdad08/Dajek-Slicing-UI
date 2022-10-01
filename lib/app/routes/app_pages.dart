@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import 'package:dajek/app/modules/home/bindings/home_binding.dart';
 import 'package:dajek/app/modules/home/views/home_view.dart';
+import 'package:dajek/app/modules/login_screen/bindings/login_screen_binding.dart';
+import 'package:dajek/app/modules/login_screen/views/login_screen_view.dart';
 import 'package:dajek/app/modules/onboarding_screen/bindings/onboarding_screen_binding.dart';
 import 'package:dajek/app/modules/onboarding_screen/views/onboarding_screen_view.dart';
 import 'package:dajek/app/modules/splash_screen/bindings/splash_screen_binding.dart';
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.ONBOARDING_SCREEN,
       page: () => OnboardingScreenView(),
       binding: OnboardingScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOGIN_SCREEN,
+      page: () => LoginScreenView(),
+      binding: LoginScreenBinding(),
     ),
   ];
 }

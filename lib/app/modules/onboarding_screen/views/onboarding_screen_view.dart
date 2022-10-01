@@ -42,11 +42,12 @@ class _OnboardingStfulState extends State<OnboardingStful> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, top: 30),
+              padding: const EdgeInsets.only(left: 20, right: 20, top: 25),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -57,13 +58,17 @@ class _OnboardingStfulState extends State<OnboardingStful> {
                             curve: Curves.ease);
                       }, icon: Icon(Icons.arrow_back, size: 24)),
                   TextButton(onPressed: () {
-                    Get.offAllNamed(Routes.HOME);
-                  }, child: Text("Skip"))
+                    Get.offAllNamed(Routes.LOGIN_SCREEN);
+                  }, child: Text("Skip", style: textButtonSkipBoarding,))
                 ],
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
             Expanded(
               child: PageView.builder(
+                  physics: BouncingScrollPhysics(),
                   onPageChanged: (index) {
                     setState(() {
                       _pageIndex = index;
@@ -80,19 +85,20 @@ class _OnboardingStfulState extends State<OnboardingStful> {
                 ...List.generate(
                     onboard_data.length,
                     (index) => Padding(
-                          padding: const EdgeInsets.only(top: 10, bottom: 10),
+                          padding: const EdgeInsets.only(top: 10, bottom: 15),
                           child: DotIndicator(
                             isActive: index == _pageIndex,
                           ),
                         )),
               ],
             ),
+            //Button
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
+              padding: const EdgeInsets.only(left: 45, right: 45),
               child: InkWell(
                 onTap: () {
                   if(_pageIndex == onboard_data.length -1){
-                    Get.offAllNamed(Routes.HOME);
+                    Get.offAllNamed(Routes.LOGIN_SCREEN);
                   }
                   _pageController.nextPage(
                       duration: Duration(milliseconds: 300),
@@ -105,7 +111,7 @@ class _OnboardingStfulState extends State<OnboardingStful> {
                       borderRadius: BorderRadius.circular(50), color: red1),
                   child: Center(
                       child: Text(
-                    _pageIndex == onboard_data.length - 1 ? "Continue" : "Next",
+                    _pageIndex == onboard_data.length - 1 ? "Get Started" : "Next",
                     style: textButtonBoarding,
                   )),
                 ),
@@ -129,14 +135,12 @@ class OnboardingContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.white,
         body: SafeArea(
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(
-              height: 30,
-            ),
             Image.asset(image, width: 270),
             SizedBox(height: 100),
             Text("Relaxing Trip", style: onBoardingHeadText),

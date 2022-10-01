@@ -26,5 +26,21 @@ TextStyle textButtonBoarding = GoogleFonts.poppins(
     fontWeight: FontWeight.w500
 );
 
+TextStyle textButtonSkipBoarding = GoogleFonts.poppins(
+    color: orange1,
+    fontSize: 13,
+    fontWeight: FontWeight.w400
+);
+
+TextStyle textSignUp = GoogleFonts.poppins(
+    color: Colors.black,
+    fontSize: 16,
+    fontWeight: FontWeight.w600
+);
+
+
 const Color red1 = Color(0xffE11717);
 const Color grey1 = Color(0xffCCCCCC);
+const Color lineGrey = Color(0xffE0E0E0);
+const Color orange1 = Color(0xffFFA6A6);
+const Color lightGrey = Color(0xffFAFAFA);
