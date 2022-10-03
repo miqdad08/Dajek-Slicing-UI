@@ -235,7 +235,7 @@ class HomeView extends GetView<HomeController> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Today's Promo",
+                          "New Articles",
                           style: categoryText,
                         ),
                         Text(
