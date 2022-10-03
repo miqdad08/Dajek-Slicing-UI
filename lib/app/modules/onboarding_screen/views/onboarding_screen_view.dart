@@ -94,7 +94,7 @@ class _OnboardingStfulState extends State<OnboardingStful> {
             ),
             //Button
             Padding(
-              padding: const EdgeInsets.only(left: 45, right: 45),
+              padding: const EdgeInsets.only(left: 40, right: 40),
               child: InkWell(
                 onTap: () {
                   if(_pageIndex == onboard_data.length -1){
@@ -143,11 +143,11 @@ class OnboardingContent extends StatelessWidget {
           children: [
             Image.asset(image, width: 270),
             SizedBox(height: 100),
-            Text("Relaxing Trip", style: onBoardingHeadText),
+            Text("Relaxing Trip", style: textOnBoardingHead),
             Text(
               "our drivers prioritize comfort and\n safety on the way.",
               textAlign: TextAlign.center,
-              style: onBoardingSubText,
+              style: textOnBoardingSub,
             ),
           ],
         ),

@@ -24,5 +24,8 @@ flutter:
     - family: Ubuntu
       fonts: 
         - asset: assets/fonts/Ubuntu/Ubuntu-Regular.ttf
+    - family: IconHome
+      fonts:
+        - asset: assets/icons/IconHome.ttf
   uses-material-design: true
 

@@ -47,10 +47,13 @@ class _SplashState extends State<Splash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("assets/images/logo.png", width: 225,),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 45),
+              child: Image.asset(imageDajek, width: 225,),
+            ),
             Text(
               'Ojeknyo Rang Ranah Minang',
-              style: splashText,
+              style: textSplash,
             ),
           ],
         ),
