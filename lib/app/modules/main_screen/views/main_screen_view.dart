@@ -51,7 +51,8 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: body(),
       bottomNavigationBar: BottomNavigationBar(
-
+        backgroundColor: Colors.white,
+        unselectedItemColor: grey1,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),

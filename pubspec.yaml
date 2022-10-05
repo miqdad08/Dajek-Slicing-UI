@@ -9,7 +9,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: 4.6.5
   google_fonts: 3.0.1
-  flutter: 
+  flutter:
     sdk: flutter
 
 dev_dependencies: 
@@ -25,7 +25,7 @@ flutter:
       fonts: 
         - asset: assets/fonts/Ubuntu/Ubuntu-Regular.ttf
     - family: IconHome
-      fonts:
+      fonts: 
         - asset: assets/icons/IconHome.ttf
   uses-material-design: true
 

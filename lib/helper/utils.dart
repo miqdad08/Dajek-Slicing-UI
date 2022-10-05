@@ -69,14 +69,49 @@ TextStyle categoryText = GoogleFonts.roboto(
     fontWeight: FontWeight.w600
 );
 
+TextStyle myLocText = GoogleFonts.poppins(
+    color: Colors.grey,
+    fontSize: 12,
+    fontWeight: FontWeight.w400
+);
+
+
+TextStyle locationText = GoogleFonts.roboto(
+    color: Colors.black,
+    fontSize: 15,
+    fontWeight: FontWeight.w800
+);
+
+TextStyle foodNameText = GoogleFonts.roboto(
+    color: Colors.black,
+    fontSize: 14,
+    fontWeight: FontWeight.w400
+);
+
+TextStyle foodPriceText = GoogleFonts.roboto(
+    color: red1,
+    fontSize: 15,
+    fontWeight: FontWeight.w500
+);
+
+TextStyle foodRatingText = GoogleFonts.roboto(
+    color: Colors.black,
+    fontSize: 12,
+    fontWeight: FontWeight.w500
+);
+
 ///Image Constant
 var imageDajek = "assets/images/logo.png";
 var imageProfile = "assets/images/profile.png";
 var car = "assets/images/car.png";
 var bike = "assets/images/bike.png";
 var more = "assets/images/more.png";
+var favorite = "assets/images/favorite.png";
+var nearby = "assets/images/nearby.png";
+var promo = "assets/images/promo.png";
 var content1 = "assets/images/content1.png";
 var content2 = "assets/images/content2.png";
+var content3 = "assets/images/content3.png";
 
 ///Color Constant
 const Color red1 = Color(0xffE11717);
@@ -84,5 +119,6 @@ const Color grey1 = Color(0xffCCCCCC);
 const Color darkGrey1 = Color(0xff808080);
 const Color lineGrey = Color(0xffE0E0E0);
 const Color orange1 = Color(0xffFFA6A6);
+const Color orange2 = Color(0xffFF4E4E);
 const Color lightGrey = Color(0xffFAFAFA);
 const Color peach = Color(0xffFDF3F6);

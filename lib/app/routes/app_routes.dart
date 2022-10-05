@@ -11,6 +11,7 @@ abstract class Routes {
   static const SIGNUP = _Paths.SIGNUP;
   static const TRANSACTION = _Paths.TRANSACTION;
   static const MAIN_SCREEN = _Paths.MAIN_SCREEN;
+  static const FOOD_SCREEN = _Paths.FOOD_SCREEN;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const SIGNUP = '/signup';
   static const TRANSACTION = '/transaction';
   static const MAIN_SCREEN = '/main-screen';
+  static const FOOD_SCREEN = '/food-screen';
 }

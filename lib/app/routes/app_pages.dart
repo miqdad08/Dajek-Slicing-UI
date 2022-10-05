@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:dajek/app/modules/food_screen/bindings/food_screen_binding.dart';
+import 'package:dajek/app/modules/food_screen/views/food_screen_view.dart';
 import 'package:dajek/app/modules/home/bindings/home_binding.dart';
 import 'package:dajek/app/modules/home/views/home_view.dart';
 import 'package:dajek/app/modules/login_screen/bindings/login_screen_binding.dart';
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.MAIN_SCREEN,
       page: () => MainScreenView(),
       binding: MainScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.FOOD_SCREEN,
+      page: () => FoodScreenView(),
+      binding: FoodScreenBinding(),
     ),
   ];
 }
