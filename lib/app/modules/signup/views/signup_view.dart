@@ -233,28 +233,27 @@ class _LogoutContentState extends State<LogoutContent> {
               ),
             ),
             Spacer(),
-
             ///Text & Text Button Sign UP
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Already have an account?",
-                  style: textOnBoardingSub,
-                ),
-                TextButton(
-                    onPressed: () {
-                      Get.offAllNamed(Routes.LOGIN_SCREEN);
-                    },
-                    child: Text(
-                      "Sign in",
-                      style: textSignUp,
-                    )),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Already have an account?",
+                    style: textOnBoardingSub,
+                  ),
+                  TextButton(
+                      onPressed: () {
+                        Get.offAllNamed(Routes.LOGIN_SCREEN);
+                      },
+                      child: Text(
+                        "Sign in",
+                        style: textSignUp,
+                      )),
+                ],
+              ),
             ),
-            SizedBox(
-              height: 15,
-            )
           ],
         ),
       ),
