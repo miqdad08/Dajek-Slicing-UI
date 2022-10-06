@@ -16,6 +16,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(color: Colors.white),
+        scaffoldBackgroundColor: Colors.white,
+      ),
       debugShowCheckedModeBanner: false,
       title: "Application",
       initialRoute: Routes.SPLASH_SCREEN,
