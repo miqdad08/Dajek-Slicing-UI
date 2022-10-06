@@ -12,6 +12,10 @@ abstract class Routes {
   static const TRANSACTION = _Paths.TRANSACTION;
   static const MAIN_SCREEN = _Paths.MAIN_SCREEN;
   static const FOOD_SCREEN = _Paths.FOOD_SCREEN;
+  static const NEARBY_SCREEN = _Paths.NEARBY_SCREEN;
+  static const SEARCH = _Paths.SEARCH;
+  static const DETAIL_SCREEN = _Paths.DETAIL_SCREEN;
+  static const CHECKOUT_SCREEN = _Paths.CHECKOUT_SCREEN;
 }
 
 abstract class _Paths {
@@ -23,4 +27,8 @@ abstract class _Paths {
   static const TRANSACTION = '/transaction';
   static const MAIN_SCREEN = '/main-screen';
   static const FOOD_SCREEN = '/food-screen';
+  static const NEARBY_SCREEN = '/nearby-screen';
+  static const SEARCH = '/search';
+  static const DETAIL_SCREEN = '/detail-screen';
+  static const CHECKOUT_SCREEN = '/checkout-screen';
 }

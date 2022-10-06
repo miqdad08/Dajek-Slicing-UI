@@ -88,7 +88,7 @@ TextStyle foodNameText = GoogleFonts.roboto(
     fontWeight: FontWeight.w400
 );
 
-TextStyle foodPriceText = GoogleFonts.roboto(
+TextStyle foodPriceListText = GoogleFonts.roboto(
     color: red1,
     fontSize: 15,
     fontWeight: FontWeight.w500
@@ -99,6 +99,25 @@ TextStyle foodRatingText = GoogleFonts.roboto(
     fontSize: 12,
     fontWeight: FontWeight.w500
 );
+
+TextStyle screenInfoText = GoogleFonts.roboto(
+    color: grey1,
+    fontSize: 16,
+    fontWeight: FontWeight.w500
+);
+
+TextStyle hintSearchBarText = GoogleFonts.roboto(
+    color: Colors.grey,
+    fontSize: 15,
+    fontWeight: FontWeight.w400
+);
+
+TextStyle descriptionBarText = GoogleFonts.roboto(
+    color: Colors.grey,
+    fontSize: 13,
+    fontWeight: FontWeight.w500
+);
+
 
 ///Image Constant
 var imageDajek = "assets/images/logo.png";
@@ -112,6 +131,8 @@ var promo = "assets/images/promo.png";
 var content1 = "assets/images/content1.png";
 var content2 = "assets/images/content2.png";
 var content3 = "assets/images/content3.png";
+var addIcon = "assets/images/add_icon.png";
+var removeIcon = "assets/images/remove_icon.png";
 
 ///Color Constant
 const Color red1 = Color(0xffE11717);

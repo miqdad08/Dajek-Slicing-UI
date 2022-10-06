@@ -1,5 +1,9 @@
 import 'package:get/get.dart';
 
+import 'package:dajek/app/modules/checkout_screen/bindings/checkout_screen_binding.dart';
+import 'package:dajek/app/modules/checkout_screen/views/checkout_screen_view.dart';
+import 'package:dajek/app/modules/detail_screen/bindings/detail_screen_binding.dart';
+import 'package:dajek/app/modules/detail_screen/views/detail_screen_view.dart';
 import 'package:dajek/app/modules/food_screen/bindings/food_screen_binding.dart';
 import 'package:dajek/app/modules/food_screen/views/food_screen_view.dart';
 import 'package:dajek/app/modules/home/bindings/home_binding.dart';
@@ -8,14 +12,19 @@ import 'package:dajek/app/modules/login_screen/bindings/login_screen_binding.dar
 import 'package:dajek/app/modules/login_screen/views/login_screen_view.dart';
 import 'package:dajek/app/modules/main_screen/bindings/main_screen_binding.dart';
 import 'package:dajek/app/modules/main_screen/views/main_screen_view.dart';
+import 'package:dajek/app/modules/nearby_screen/bindings/nearby_screen_binding.dart';
+import 'package:dajek/app/modules/nearby_screen/views/nearby_screen_view.dart';
 import 'package:dajek/app/modules/onboarding_screen/bindings/onboarding_screen_binding.dart';
 import 'package:dajek/app/modules/onboarding_screen/views/onboarding_screen_view.dart';
+import 'package:dajek/app/modules/search/bindings/search_binding.dart';
+import 'package:dajek/app/modules/search/views/search_view.dart';
 import 'package:dajek/app/modules/signup/bindings/signup_binding.dart';
 import 'package:dajek/app/modules/signup/views/signup_view.dart';
 import 'package:dajek/app/modules/splash_screen/bindings/splash_screen_binding.dart';
 import 'package:dajek/app/modules/splash_screen/views/splash_screen_view.dart';
 import 'package:dajek/app/modules/transaction/bindings/transaction_binding.dart';
 import 'package:dajek/app/modules/transaction/views/transaction_view.dart';
+import 'package:dajek/model/food_model.dart';
 
 part 'app_routes.dart';
 
@@ -65,5 +74,25 @@ class AppPages {
       page: () => FoodScreenView(),
       binding: FoodScreenBinding(),
     ),
+    GetPage(
+      name: _Paths.NEARBY_SCREEN,
+      page: () => NearbyScreenView(),
+      binding: NearbyScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.SEARCH,
+      page: () => SearchView(),
+      binding: SearchBinding(),
+    ),
+    // GetPage(
+    //   name: _Paths.DETAIL_SCREEN,
+    //   page: () => DetailScreenView(food : food_data),
+    //   binding: DetailScreenBinding(),
+    // ),
+    // GetPage(
+    //   name: _Paths.CHECKOUT_SCREEN,
+    //   page: () => CheckoutScreenView(),
+    //   binding: CheckoutScreenBinding(),
+    // ),
   ];
 }

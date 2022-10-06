@@ -1,5 +1,6 @@
 import 'package:dajek/helper/utils.dart';
 import 'package:dajek/model/food_model.dart';
+import 'package:dajek/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -9,7 +10,6 @@ import '../../../routes/app_pages.dart';
 import '../controllers/food_screen_controller.dart';
 
 class FoodScreenView extends GetView<FoodScreenController> {
-  final List<FoodModel> foods = foodList;
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +19,10 @@ class FoodScreenView extends GetView<FoodScreenController> {
         physics: BouncingScrollPhysics(),
         child: SafeArea(
             child: Padding(
-          padding: EdgeInsets.only(left: 30, right: 30, top: 40),
+          padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
           child: Column(
             children: [
-              /// Location, Back Button & Search
+              ///Location, Back Button & Search
               TopBody(),
               ///Image & Features
               MidBody(),
@@ -85,27 +85,8 @@ class TopBody extends StatelessWidget {
         SizedBox(height: 25),
 
         /// TextField Search
-        Container(
-          width: double.infinity,
-          height: 55,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10), color: lightGrey),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              decoration: InputDecoration(
-                  prefixIcon: Icon(
-                    Icons.search,
-                    size: 30,
-                    color: Colors.black,
-                  ),
-                  border: InputBorder.none,
-                  hintText: "Search",
-                  hintStyle: textOnBoardingSub),
-            ),
-          ),
-        ),
-        SizedBox(height: 25),
+        SearchBar(),
+        SizedBox(height: 25,),
       ],
     );
   }
@@ -134,15 +115,20 @@ class MidBody extends StatelessWidget {
             ///Nearby
             Column(
               children: [
-                Container(
-                  width: 65,
-                  height: 65,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: peach),
-                  child: Image.asset(
-                    nearby,
-                    scale: 3,
+                InkWell(
+                  onTap: (){
+                    Get.toNamed(Routes.NEARBY_SCREEN);
+                  },
+                  child: Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: peach),
+                    child: Image.asset(
+                      nearby,
+                      scale: 3,
+                    ),
                   ),
                 ),
                 SizedBox(
