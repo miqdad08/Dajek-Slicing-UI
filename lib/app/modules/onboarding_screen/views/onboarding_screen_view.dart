@@ -1,4 +1,4 @@
-import 'package:dajek/helper/dot_indicator.dart';
+import 'package:dajek/widget/dot_indicator.dart';
 import 'package:dajek/helper/utils.dart';
 import 'package:flutter/material.dart';
 
@@ -142,7 +142,7 @@ class OnboardingContent extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Image.asset(image, width: 270),
-            SizedBox(height: 100),
+            Spacer(),
             Text("Relaxing Trip", style: textOnBoardingHead),
             Text(
               "our drivers prioritize comfort and\n safety on the way.",
