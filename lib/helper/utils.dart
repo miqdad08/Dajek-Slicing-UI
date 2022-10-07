@@ -112,6 +112,12 @@ TextStyle hintSearchBarText = GoogleFonts.roboto(
     fontWeight: FontWeight.w400
 );
 
+TextStyle headDescriptionText = GoogleFonts.roboto(
+    color: grey1,
+    fontSize: 14,
+    fontWeight: FontWeight.w500
+);
+
 TextStyle descriptionBarText = GoogleFonts.roboto(
     color: Colors.grey,
     fontSize: 13,
@@ -133,6 +139,10 @@ var content2 = "assets/images/content2.png";
 var content3 = "assets/images/content3.png";
 var addIcon = "assets/images/add_icon.png";
 var removeIcon = "assets/images/remove_icon.png";
+var ovo = "assets/images/ovo.png";
+var dana = "assets/images/dana.png";
+var gopay = "assets/images/gopay.png";
+var linkaja = "assets/images/link-aja.png";
 
 ///Color Constant
 const Color red1 = Color(0xffE11717);

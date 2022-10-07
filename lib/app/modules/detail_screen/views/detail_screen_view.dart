@@ -51,8 +51,8 @@ class TopBody extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(
-            top: 40,
-            left: 20,
+            top: 60,
+            left: 30,
           ),
           child: IconButton(
               onPressed: () {
