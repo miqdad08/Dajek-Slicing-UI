@@ -17,14 +17,17 @@ class DetailScreenView extends GetView<DetailScreenController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          ///TopBody
-          TopBody(food: food),
+      body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
+        child: Column(
+          children: [
+            ///TopBody
+            TopBody(food: food),
 
-          ///MidBody
-          MidBody(food: food)
-        ],
+            ///MidBody
+            MidBody(food: food)
+          ],
+        ),
       ),
       bottomNavigationBar: BottomBody(
         food: food,
@@ -92,7 +95,7 @@ class MidBody extends StatelessWidget {
               ),
               Text(
                 "IDR ${food.price}",
-                style: foodPriceListText,
+                style: foodPriceText,
               ),
             ],
           ),
@@ -150,7 +153,7 @@ class _BottomBodyState extends State<BottomBody> {
 
   void _decrementQuantity() {
     setState(() {
-      _quantity = _quantity! - 1;
+      _quantity! <= 0 ? _quantity = 0 : _quantity = _quantity! - 1;
     });
   }
 
@@ -163,7 +166,7 @@ class _BottomBodyState extends State<BottomBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 170,
+      height: 180,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(30),
@@ -176,7 +179,7 @@ class _BottomBodyState extends State<BottomBody> {
             ),
           ]),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(30, 25, 30, 15),
+        padding: const EdgeInsets.fromLTRB(30, 25, 30, 30),
         child: Column(
           children: [
             Row(
@@ -194,7 +197,7 @@ class _BottomBodyState extends State<BottomBody> {
                     ),
                     Text(
                       "IDR ${int.tryParse(widget.food.price)! * _quantity!}",
-                      style: foodPriceListText,
+                      style: foodPriceText,
                     ),
                   ],
                 ),
