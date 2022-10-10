@@ -94,6 +94,18 @@ TextStyle foodPriceListText = GoogleFonts.roboto(
     fontWeight: FontWeight.w500
 );
 
+TextStyle foodPriceText = GoogleFonts.roboto(
+    color: red1,
+    fontSize: 16,
+    fontWeight: FontWeight.w500
+);
+
+TextStyle priceCheckoutText = GoogleFonts.roboto(
+    color: grey1,
+    fontSize: 14,
+    fontWeight: FontWeight.w700
+);
+
 TextStyle foodRatingText = GoogleFonts.roboto(
     color: Colors.black,
     fontSize: 12,
@@ -113,15 +125,27 @@ TextStyle hintSearchBarText = GoogleFonts.roboto(
 );
 
 TextStyle headDescriptionText = GoogleFonts.roboto(
+    color: Colors.grey,
+    fontSize: 14,
+    fontWeight: FontWeight.w600
+);
+
+TextStyle descriptionBarText = GoogleFonts.roboto(
     color: grey1,
     fontSize: 14,
     fontWeight: FontWeight.w500
 );
 
-TextStyle descriptionBarText = GoogleFonts.roboto(
-    color: Colors.grey,
-    fontSize: 13,
-    fontWeight: FontWeight.w500
+TextStyle headPaymentText = GoogleFonts.roboto(
+    color: Colors.black,
+    fontSize: 16,
+    fontWeight: FontWeight.w600
+);
+
+TextStyle headBottomSheetText = GoogleFonts.poppins(
+    color: Colors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.w600
 );
 
 

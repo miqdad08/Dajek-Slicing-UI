@@ -16,12 +16,16 @@ import 'package:dajek/app/modules/nearby_screen/bindings/nearby_screen_binding.d
 import 'package:dajek/app/modules/nearby_screen/views/nearby_screen_view.dart';
 import 'package:dajek/app/modules/onboarding_screen/bindings/onboarding_screen_binding.dart';
 import 'package:dajek/app/modules/onboarding_screen/views/onboarding_screen_view.dart';
+import 'package:dajek/app/modules/payment_method/bindings/payment_method_binding.dart';
+import 'package:dajek/app/modules/payment_method/views/payment_method_view.dart';
 import 'package:dajek/app/modules/search/bindings/search_binding.dart';
 import 'package:dajek/app/modules/search/views/search_view.dart';
 import 'package:dajek/app/modules/signup/bindings/signup_binding.dart';
 import 'package:dajek/app/modules/signup/views/signup_view.dart';
 import 'package:dajek/app/modules/splash_screen/bindings/splash_screen_binding.dart';
 import 'package:dajek/app/modules/splash_screen/views/splash_screen_view.dart';
+import 'package:dajek/app/modules/success_screen/bindings/success_screen_binding.dart';
+import 'package:dajek/app/modules/success_screen/views/success_screen_view.dart';
 import 'package:dajek/app/modules/transaction/bindings/transaction_binding.dart';
 import 'package:dajek/app/modules/transaction/views/transaction_view.dart';
 import 'package:dajek/model/food_model.dart';
@@ -94,5 +98,15 @@ class AppPages {
     //   page: () => CheckoutScreenView(),
     //   binding: CheckoutScreenBinding(),
     // ),
+    GetPage(
+      name: _Paths.PAYMENT_METHOD,
+      page: () => PaymentMethodView(),
+      binding: PaymentMethodBinding(),
+    ),
+    GetPage(
+      name: _Paths.SUCCESS_SCREEN,
+      page: () => SuccessScreenView(),
+      binding: SuccessScreenBinding(),
+    ),
   ];
 }
