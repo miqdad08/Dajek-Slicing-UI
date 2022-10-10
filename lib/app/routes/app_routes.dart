@@ -18,6 +18,7 @@ abstract class Routes {
   static const CHECKOUT_SCREEN = _Paths.CHECKOUT_SCREEN;
   static const PAYMENT_METHOD = _Paths.PAYMENT_METHOD;
   static const SUCCESS_SCREEN = _Paths.SUCCESS_SCREEN;
+  static const SEARCH_DRIVER = _Paths.SEARCH_DRIVER;
 }
 
 abstract class _Paths {
@@ -35,4 +36,5 @@ abstract class _Paths {
   static const CHECKOUT_SCREEN = '/checkout-screen';
   static const PAYMENT_METHOD = '/payment-method';
   static const SUCCESS_SCREEN = '/success-screen';
+  static const SEARCH_DRIVER = '/search-driver';
 }

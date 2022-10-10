@@ -20,6 +20,8 @@ import 'package:dajek/app/modules/payment_method/bindings/payment_method_binding
 import 'package:dajek/app/modules/payment_method/views/payment_method_view.dart';
 import 'package:dajek/app/modules/search/bindings/search_binding.dart';
 import 'package:dajek/app/modules/search/views/search_view.dart';
+import 'package:dajek/app/modules/search_driver/bindings/search_driver_binding.dart';
+import 'package:dajek/app/modules/search_driver/views/search_driver_view.dart';
 import 'package:dajek/app/modules/signup/bindings/signup_binding.dart';
 import 'package:dajek/app/modules/signup/views/signup_view.dart';
 import 'package:dajek/app/modules/splash_screen/bindings/splash_screen_binding.dart';
@@ -107,6 +109,11 @@ class AppPages {
       name: _Paths.SUCCESS_SCREEN,
       page: () => SuccessScreenView(),
       binding: SuccessScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.SEARCH_DRIVER,
+      page: () => SearchDriverView(),
+      binding: SearchDriverBinding(),
     ),
   ];
 }

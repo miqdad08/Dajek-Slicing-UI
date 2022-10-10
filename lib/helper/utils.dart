@@ -131,7 +131,7 @@ TextStyle headDescriptionText = GoogleFonts.roboto(
 );
 
 TextStyle descriptionBarText = GoogleFonts.roboto(
-    color: grey1,
+    color: darkGrey1,
     fontSize: 14,
     fontWeight: FontWeight.w500
 );
