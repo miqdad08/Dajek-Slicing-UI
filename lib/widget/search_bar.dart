@@ -20,7 +20,7 @@ class SearchBar extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: [
-              const Icon(Icons.search),
+              Image.asset(search, width: 20,),
               const SizedBox(width: 10,),
               Text("Find your favorite food today...", style: hintSearchBarText,)
             ],
@@ -51,7 +51,7 @@ class _SearchBarOnFocusState extends State<SearchBarOnFocus> {
         padding: const EdgeInsets.all(8.0),
         child: Row(
           children: [
-            const Icon(Icons.search),
+            Image.asset(search, width: 20,),
             const SizedBox(
               width: 10,
             ),
