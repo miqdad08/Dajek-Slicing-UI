@@ -127,16 +127,11 @@ class TopBody extends StatelessWidget {
 }
 
 ///MidBody
-class MidBody extends StatefulWidget {
+class MidBody extends StatelessWidget {
   final FoodModel food;
 
   const MidBody({Key? key, required this.food}) : super(key: key);
 
-  @override
-  State<MidBody> createState() => _MidBodyState();
-}
-
-class _MidBodyState extends State<MidBody> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -191,7 +186,7 @@ class _MidBodyState extends State<MidBody> {
                             ),
                             SizedBox(height: 5),
                             Text(
-                              "IDR ${widget.food.price}",
+                              "IDR ${food.price}",
                               style: descriptionBarText,
                             ),
                           ],
@@ -245,7 +240,7 @@ class _MidBodyState extends State<MidBody> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4),
                               image: DecorationImage(
-                                  image: NetworkImage(widget.food.imageUrls),
+                                  image: NetworkImage(food.imageUrls),
                                   fit: BoxFit.cover),
                               border: Border.all(color: lightGrey, width: 1)),
                         ),
@@ -257,11 +252,11 @@ class _MidBodyState extends State<MidBody> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              widget.food.nameFood,
+                              food.nameFood,
                               style: headDescriptionText,
                             ),
                             Text(
-                              "IDR ${widget.food.price}",
+                              "IDR ${food.price}",
                               style: descriptionBarText,
                             ),
                           ],
@@ -297,7 +292,8 @@ class BottomBody extends StatelessWidget {
       height: 220,
       decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30), topRight: Radius.circular(30)),
           boxShadow: [
             BoxShadow(
               color: Colors.black12,
@@ -406,6 +402,7 @@ class BottomBody extends StatelessWidget {
                               child: ListTile(
                                 title: Row(
                                   children: [
+                                    ///Button Cancel
                                     Expanded(
                                       flex: 2,
                                       child: InkWell(
@@ -426,6 +423,7 @@ class BottomBody extends StatelessWidget {
                                       ),
                                     ),
                                     SizedBox(width: 15,),
+                                    ///Button Order
                                     Expanded(
                                       flex: 2,
                                       child: InkWell(
