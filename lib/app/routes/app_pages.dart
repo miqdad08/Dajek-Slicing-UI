@@ -26,6 +26,8 @@ import 'package:dajek/app/modules/signup/bindings/signup_binding.dart';
 import 'package:dajek/app/modules/signup/views/signup_view.dart';
 import 'package:dajek/app/modules/splash_screen/bindings/splash_screen_binding.dart';
 import 'package:dajek/app/modules/splash_screen/views/splash_screen_view.dart';
+import 'package:dajek/app/modules/status_ordering_screen/bindings/status_ordering_screen_binding.dart';
+import 'package:dajek/app/modules/status_ordering_screen/views/status_ordering_screen_view.dart';
 import 'package:dajek/app/modules/success_screen/bindings/success_screen_binding.dart';
 import 'package:dajek/app/modules/success_screen/views/success_screen_view.dart';
 import 'package:dajek/app/modules/transaction/bindings/transaction_binding.dart';
@@ -114,6 +116,11 @@ class AppPages {
       name: _Paths.SEARCH_DRIVER,
       page: () => SearchDriverView(),
       binding: SearchDriverBinding(),
+    ),
+    GetPage(
+      name: _Paths.STATUS_ORDERING_SCREEN,
+      page: () => StatusOrderingScreenView(),
+      binding: StatusOrderingScreenBinding(),
     ),
   ];
 }
