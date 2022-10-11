@@ -163,11 +163,13 @@ var content2 = "assets/images/content2.png";
 var content3 = "assets/images/content3.png";
 var addIcon = "assets/images/add_icon.png";
 var removeIcon = "assets/images/remove_icon.png";
+var search = "assets/images/search.png";
 var ovo = "assets/images/ovo.png";
 var dana = "assets/images/dana.png";
 var gopay = "assets/images/gopay.png";
 var linkaja = "assets/images/link-aja.png";
-var marker = "assets/images/marker.png";
+var pointer = "assets/images/pointer.png";
+var map = "assets/images/map.png";
 
 ///Color Constant
 const Color red1 = Color(0xffE11717);
@@ -178,3 +180,4 @@ const Color orange1 = Color(0xffFFA6A6);
 const Color orange2 = Color(0xffFF4E4E);
 const Color lightGrey = Color(0xffFAFAFA);
 const Color peach = Color(0xffFDF3F6);
+const Color white = Color(0xffFFFFFF);
