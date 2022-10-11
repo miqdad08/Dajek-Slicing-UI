@@ -167,6 +167,7 @@ var ovo = "assets/images/ovo.png";
 var dana = "assets/images/dana.png";
 var gopay = "assets/images/gopay.png";
 var linkaja = "assets/images/link-aja.png";
+var marker = "assets/images/marker.png";
 
 ///Color Constant
 const Color red1 = Color(0xffE11717);
