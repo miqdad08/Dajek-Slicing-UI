@@ -143,7 +143,7 @@ class BottomBody extends StatelessWidget {
               height: 90,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: lightGrey, width: 1)),
+                  border: Border.all(color: lightGrey, width: 2)),
               child: Padding(
                   padding: const EdgeInsets.fromLTRB(15, 0, 5, 0),
                   child: Row(

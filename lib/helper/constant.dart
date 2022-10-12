@@ -148,6 +148,19 @@ TextStyle headBottomSheetText = GoogleFonts.poppins(
     fontWeight: FontWeight.w600
 );
 
+TextStyle subBottomSheeetText = GoogleFonts.roboto(
+    color: grey1,
+    fontSize: 12,
+    fontWeight: FontWeight.w500
+);
+
+TextStyle subBottomSheeetText2 = GoogleFonts.poppins(
+    color: grey1,
+    fontSize: 14,
+    fontWeight: FontWeight.w500
+);
+
+
 
 ///Image Constant
 var imageDajek = "assets/images/logo.png";
@@ -169,6 +182,8 @@ var dana = "assets/images/dana.png";
 var gopay = "assets/images/gopay.png";
 var linkaja = "assets/images/link-aja.png";
 var pointer = "assets/images/pointer.png";
+var profil = "assets/images/profil.png";
+var point = "assets/images/point.png";
 
 ///Color Constant
 const Color red1 = Color(0xffE11717);

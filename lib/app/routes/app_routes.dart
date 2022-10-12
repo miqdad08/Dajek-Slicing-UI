@@ -22,6 +22,7 @@ abstract class Routes {
   static const STATUS_ORDERING_SCREEN = _Paths.STATUS_ORDERING_SCREEN;
   static const ORDER_DRIVER = _Paths.ORDER_DRIVER;
   static const DRIVERS_STATUS = _Paths.DRIVERS_STATUS;
+  static const CHAT_SCREEN = _Paths.CHAT_SCREEN;
 }
 
 abstract class _Paths {
@@ -43,4 +44,5 @@ abstract class _Paths {
   static const STATUS_ORDERING_SCREEN = '/status-ordering-screen';
   static const ORDER_DRIVER = '/order-driver';
   static const DRIVERS_STATUS = '/drivers-status';
+  static const CHAT_SCREEN = '/chat-screen';
 }

@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:dajek/app/modules/chat_screen/bindings/chat_screen_binding.dart';
+import 'package:dajek/app/modules/chat_screen/views/chat_screen_view.dart';
 import 'package:dajek/app/modules/checkout_screen/bindings/checkout_screen_binding.dart';
 import 'package:dajek/app/modules/checkout_screen/views/checkout_screen_view.dart';
 import 'package:dajek/app/modules/detail_screen/bindings/detail_screen_binding.dart';
@@ -135,6 +137,11 @@ class AppPages {
       name: _Paths.DRIVERS_STATUS,
       page: () => DriversStatusView(),
       binding: DriversStatusBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHAT_SCREEN,
+      page: () => ChatScreenView(),
+      binding: ChatScreenBinding(),
     ),
   ];
 }

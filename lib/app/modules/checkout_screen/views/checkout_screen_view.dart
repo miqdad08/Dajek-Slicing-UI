@@ -90,7 +90,7 @@ class TopBody extends StatelessWidget {
             height: 100,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: lightGrey, width: 1)),
+                border: Border.all(color: lightGrey, width: 2)),
             child: Padding(
                 padding: const EdgeInsets.fromLTRB(15, 20, 5, 20),
                 child: Row(
@@ -227,7 +227,7 @@ class MidBody extends StatelessWidget {
             height: 90,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: lightGrey, width: 1)),
+                border: Border.all(color: lightGrey, width: 2)),
             child: Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                 child: Row(
