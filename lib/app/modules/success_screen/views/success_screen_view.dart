@@ -1,4 +1,6 @@
-import 'package:dajek/helper/utils.dart';
+import 'package:dajek/app/modules/order_driver/views/order_driver_view.dart';
+import 'package:dajek/app/modules/search_driver/views/search_driver_view.dart';
+import 'package:dajek/helper/constant.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -10,11 +12,26 @@ import '../controllers/success_screen_controller.dart';
 class SuccessScreenView extends GetView<SuccessScreenController> {
   @override
   Widget build(BuildContext context) {
+    // TextEditingController textFieldController = TextEditingController();
+
+    void _sendDataToSecondScreen(BuildContext context) {
+      String textToSend = "Success";
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => SearchDriverContent(
+                    text: textToSend,
+                  )));
+    }
+
     return Scaffold(
       body: SafeArea(
         child: Column(
           children: [
-            Spacer(flex: 5,),
+            Spacer(
+              flex: 5,
+            ),
+
             ///animation Success
             Lottie.network(
                 'https://assets3.lottiefiles.com/packages/lf20_pqnfmone.json',
@@ -23,6 +40,7 @@ class SuccessScreenView extends GetView<SuccessScreenController> {
             SizedBox(
               height: 30,
             ),
+
             ///Text Success
             Text(
               "Success",
@@ -31,6 +49,7 @@ class SuccessScreenView extends GetView<SuccessScreenController> {
             SizedBox(
               height: 10,
             ),
+
             ///Sub Text Success
             Text("You have successfully ordered", style: descriptionBarText),
             SizedBox(
@@ -40,22 +59,24 @@ class SuccessScreenView extends GetView<SuccessScreenController> {
               padding: const EdgeInsets.fromLTRB(80, 0, 80, 0),
               child: InkWell(
                 onTap: () {
-                  Get.toNamed(Routes.SEARCH_DRIVER);
+                  _sendDataToSecondScreen(context);
                 },
                 child: Container(
                   height: 50,
                   decoration: BoxDecoration(
-                      color: red1,
-                      borderRadius: BorderRadius.circular(50)),
+                      color: red1, borderRadius: BorderRadius.circular(50)),
                   child: Center(
                     child: Text(
-                      "Order", style: textButtonBoarding,
+                      "Order",
+                      style: textButtonBoarding,
                     ),
                   ),
                 ),
               ),
             ),
-            Spacer(flex: 6,),
+            Spacer(
+              flex: 6,
+            ),
           ],
         ),
       ),
