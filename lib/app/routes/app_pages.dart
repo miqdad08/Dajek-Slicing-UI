@@ -4,6 +4,8 @@ import 'package:dajek/app/modules/checkout_screen/bindings/checkout_screen_bindi
 import 'package:dajek/app/modules/checkout_screen/views/checkout_screen_view.dart';
 import 'package:dajek/app/modules/detail_screen/bindings/detail_screen_binding.dart';
 import 'package:dajek/app/modules/detail_screen/views/detail_screen_view.dart';
+import 'package:dajek/app/modules/drivers_status/bindings/drivers_status_binding.dart';
+import 'package:dajek/app/modules/drivers_status/views/drivers_status_view.dart';
 import 'package:dajek/app/modules/food_screen/bindings/food_screen_binding.dart';
 import 'package:dajek/app/modules/food_screen/views/food_screen_view.dart';
 import 'package:dajek/app/modules/home/bindings/home_binding.dart';
@@ -16,6 +18,8 @@ import 'package:dajek/app/modules/nearby_screen/bindings/nearby_screen_binding.d
 import 'package:dajek/app/modules/nearby_screen/views/nearby_screen_view.dart';
 import 'package:dajek/app/modules/onboarding_screen/bindings/onboarding_screen_binding.dart';
 import 'package:dajek/app/modules/onboarding_screen/views/onboarding_screen_view.dart';
+import 'package:dajek/app/modules/order_driver/bindings/order_driver_binding.dart';
+import 'package:dajek/app/modules/order_driver/views/order_driver_view.dart';
 import 'package:dajek/app/modules/payment_method/bindings/payment_method_binding.dart';
 import 'package:dajek/app/modules/payment_method/views/payment_method_view.dart';
 import 'package:dajek/app/modules/search/bindings/search_binding.dart';
@@ -112,15 +116,25 @@ class AppPages {
       page: () => SuccessScreenView(),
       binding: SuccessScreenBinding(),
     ),
-    GetPage(
-      name: _Paths.SEARCH_DRIVER,
-      page: () => SearchDriverView(),
-      binding: SearchDriverBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.SEARCH_DRIVER,
+    //   page: () => SearchDriverView(),
+    //   binding: SearchDriverBinding(),
+    // ),
     GetPage(
       name: _Paths.STATUS_ORDERING_SCREEN,
       page: () => StatusOrderingScreenView(),
       binding: StatusOrderingScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.ORDER_DRIVER,
+      page: () => OrderDriverView(),
+      binding: OrderDriverBinding(),
+    ),
+    GetPage(
+      name: _Paths.DRIVERS_STATUS,
+      page: () => DriversStatusView(),
+      binding: DriversStatusBinding(),
     ),
   ];
 }

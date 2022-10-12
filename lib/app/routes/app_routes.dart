@@ -20,6 +20,8 @@ abstract class Routes {
   static const SUCCESS_SCREEN = _Paths.SUCCESS_SCREEN;
   static const SEARCH_DRIVER = _Paths.SEARCH_DRIVER;
   static const STATUS_ORDERING_SCREEN = _Paths.STATUS_ORDERING_SCREEN;
+  static const ORDER_DRIVER = _Paths.ORDER_DRIVER;
+  static const DRIVERS_STATUS = _Paths.DRIVERS_STATUS;
 }
 
 abstract class _Paths {
@@ -39,4 +41,6 @@ abstract class _Paths {
   static const SUCCESS_SCREEN = '/success-screen';
   static const SEARCH_DRIVER = '/search-driver';
   static const STATUS_ORDERING_SCREEN = '/status-ordering-screen';
+  static const ORDER_DRIVER = '/order-driver';
+  static const DRIVERS_STATUS = '/drivers-status';
 }
