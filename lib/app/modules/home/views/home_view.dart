@@ -1,4 +1,4 @@
-import 'package:dajek/helper/utils.dart';
+import 'package:dajek/helper/constant.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -167,15 +167,20 @@ class MidBody extends StatelessWidget {
             ///Daride
             Column(
               children: [
-                Container(
-                  width: 65,
-                  height: 65,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: peach),
-                  child: Image.asset(
-                    bike,
-                    scale: 3,
+                InkWell(
+                  onTap: (){
+                    Get.toNamed(Routes.ORDER_DRIVER);
+                  },
+                  child: Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: peach),
+                    child: Image.asset(
+                      bike,
+                      scale: 3,
+                    ),
                   ),
                 ),
                 SizedBox(

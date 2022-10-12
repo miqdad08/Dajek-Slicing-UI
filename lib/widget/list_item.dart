@@ -1,5 +1,5 @@
 import 'package:dajek/app/modules/detail_screen/views/detail_screen_view.dart';
-import 'package:dajek/helper/utils.dart';
+import 'package:dajek/helper/constant.dart';
 import 'package:dajek/model/food_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

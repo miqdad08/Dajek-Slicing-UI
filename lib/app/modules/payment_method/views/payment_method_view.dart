@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../helper/utils.dart';
+import '../../../../helper/constant.dart';
 import '../controllers/payment_method_controller.dart';
 
 class PaymentMethodView extends GetView<PaymentMethodController> {

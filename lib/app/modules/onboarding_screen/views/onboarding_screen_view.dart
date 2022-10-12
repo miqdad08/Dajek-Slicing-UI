@@ -1,5 +1,5 @@
 import 'package:dajek/widget/dot_indicator.dart';
-import 'package:dajek/helper/utils.dart';
+import 'package:dajek/helper/constant.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';

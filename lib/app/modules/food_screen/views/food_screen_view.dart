@@ -1,4 +1,4 @@
-import 'package:dajek/helper/utils.dart';
+import 'package:dajek/helper/constant.dart';
 import 'package:dajek/model/food_model.dart';
 import 'package:dajek/widget/search_bar.dart';
 import 'package:flutter/material.dart';

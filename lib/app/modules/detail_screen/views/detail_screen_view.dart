@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../helper/utils.dart';
+import '../../../../helper/constant.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/detail_screen_controller.dart';
 
@@ -149,11 +149,11 @@ class BottomBody extends StatefulWidget {
 }
 
 class _BottomBodyState extends State<BottomBody> {
-  int? _quantity = 0;
+  int? _quantity = 1;
 
   void _decrementQuantity() {
     setState(() {
-      _quantity! <= 0 ? _quantity = 0 : _quantity = _quantity! - 1;
+      _quantity! <= 1 ? _quantity = 1 : _quantity = _quantity! - 1;
     });
   }
 

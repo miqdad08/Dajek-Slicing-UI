@@ -2,7 +2,7 @@ import 'package:dajek/widget/list_item.dart';
 import 'package:dajek/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../helper/utils.dart';
+import '../../../../helper/constant.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/nearby_screen_controller.dart';
 

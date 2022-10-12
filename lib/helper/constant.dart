@@ -169,7 +169,6 @@ var dana = "assets/images/dana.png";
 var gopay = "assets/images/gopay.png";
 var linkaja = "assets/images/link-aja.png";
 var pointer = "assets/images/pointer.png";
-var map = "assets/images/map.png";
 
 ///Color Constant
 const Color red1 = Color(0xffE11717);
@@ -181,3 +180,4 @@ const Color orange2 = Color(0xffFF4E4E);
 const Color lightGrey = Color(0xffFAFAFA);
 const Color peach = Color(0xffFDF3F6);
 const Color white = Color(0xffFFFFFF);
+

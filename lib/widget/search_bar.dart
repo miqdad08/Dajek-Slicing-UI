@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../app/routes/app_pages.dart';
-import '../helper/utils.dart';
+import '../helper/constant.dart';
 
 class SearchBar extends StatelessWidget {
   @override

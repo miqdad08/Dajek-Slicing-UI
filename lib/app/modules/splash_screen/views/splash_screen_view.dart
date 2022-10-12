@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:dajek/app/modules/home/views/home_view.dart';
-import 'package:dajek/helper/utils.dart';
+import 'package:dajek/helper/constant.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';

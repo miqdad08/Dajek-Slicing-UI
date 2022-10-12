@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../helper/utils.dart';
+import '../../../../helper/constant.dart';
 import '../../../../widget/list_item.dart';
 import '../../../../widget/search_bar.dart';
 import '../../../routes/app_pages.dart';

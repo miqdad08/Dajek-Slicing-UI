@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../helper/utils.dart';
+import '../../../../helper/constant.dart';
 import '../../../../model/food_model.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/checkout_screen_controller.dart';
@@ -145,6 +145,7 @@ class MidBody extends StatelessWidget {
             style: categoryText,
           ),
         ),
+        ///Payment
         Padding(
           padding: const EdgeInsets.fromLTRB(30, 10, 30, 20),
           child: Container(
@@ -209,6 +210,7 @@ class MidBody extends StatelessWidget {
         Divider(
           color: lightGrey,
           thickness: 10,
+
         ),
 
         ///Order List
