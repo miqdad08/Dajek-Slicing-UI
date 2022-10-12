@@ -1,21 +1,27 @@
 import 'dart:async';
 
+import 'package:dajek/app/modules/success_screen/views/success_screen_view.dart';
 import 'package:dajek/widget/map.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../helper/utils.dart';
+import '../../../../helper/constant.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/search_driver_controller.dart';
 
+
+
 class SearchDriverView extends GetView<SearchDriverController> {
+  final String text;
+  SearchDriverView({Key? key, required this.text}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return SearchDriverContent();
+    return SearchDriverContent(text: text,);
   }
 }
 
 class SearchDriverContent extends StatefulWidget {
-  const SearchDriverContent({Key? key}) : super(key: key);
+  final String text;
+  const SearchDriverContent({Key? key, required this.text}) : super(key: key);
 
   @override
   State<SearchDriverContent> createState() => _SearchDriverContentState();
@@ -23,10 +29,15 @@ class SearchDriverContent extends StatefulWidget {
 
 class _SearchDriverContentState extends State<SearchDriverContent> {
 
-  searchDriverDelay()async{
+
+  searchDriverDelay() async {
     var duration = Duration(seconds: 1);
-    return Timer(duration, (){
-      Get.toNamed(Routes.STATUS_ORDERING_SCREEN);
+    return Timer(duration, () {
+      if (widget.text == "Success") {
+        Get.toNamed(Routes.STATUS_ORDERING_SCREEN);
+      }else{
+        Get.toNamed(Routes.DRIVERS_STATUS);
+      }
     });
   }
 
@@ -56,12 +67,10 @@ class _SearchDriverContentState extends State<SearchDriverContent> {
         ],
       ),
       backgroundColor: darkGrey1,
-      bottomNavigationBar:
-          BottomBody(),
+      bottomNavigationBar: BottomBody(),
     );
   }
 }
-
 
 class BottomBody extends StatelessWidget {
   const BottomBody({Key? key}) : super(key: key);
