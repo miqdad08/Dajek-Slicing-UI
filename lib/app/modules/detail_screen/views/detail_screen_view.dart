@@ -36,6 +36,7 @@ class DetailScreenView extends GetView<DetailScreenController> {
   }
 }
 
+///top Body
 class TopBody extends StatelessWidget {
   final FoodModel food;
 
@@ -72,6 +73,7 @@ class TopBody extends StatelessWidget {
   }
 }
 
+///Mid Body
 class MidBody extends StatelessWidget {
   final FoodModel food;
 

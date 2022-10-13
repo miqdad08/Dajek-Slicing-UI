@@ -14,72 +14,79 @@ class SuccessScreenView extends GetView<SuccessScreenController> {
   Widget build(BuildContext context) {
     // TextEditingController textFieldController = TextEditingController();
 
-    void _sendDataToSecondScreen(BuildContext context) {
-      String textToSend = "Success";
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => SearchDriverContent(
-                    text: textToSend,
-                  )));
-    }
-
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Spacer(
-              flex: 5,
-            ),
+      body: _body(context),
+    );
+  }
+}
 
-            ///animation Success
-            Lottie.network(
-                'https://assets3.lottiefiles.com/packages/lf20_pqnfmone.json',
-                width: 120,
-                repeat: false),
-            SizedBox(
-              height: 30,
-            ),
+///Body
+Widget _body(BuildContext context) {
+  void _sendDataToSecondScreen(BuildContext context) {
+    String textToSend = "Success";
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =>
+            SearchDriverContent(
+              text: textToSend,
+            )));
+  }
 
-            ///Text Success
-            Text(
-              "Success",
-              style: headBottomSheetText,
-            ),
-            SizedBox(
-              height: 10,
-            ),
 
-            ///Sub Text Success
-            Text("You have successfully ordered", style: descriptionBarText),
-            SizedBox(
+  return SafeArea(
+    child: Column(
+      children: [
+        Spacer(
+          flex: 5,
+        ),
+
+        ///animation Success
+        Lottie.network(
+            'https://assets3.lottiefiles.com/packages/lf20_pqnfmone.json',
+            width: 120,
+            repeat: false),
+        SizedBox(
+          height: 30,
+        ),
+
+        ///Text Success
+        Text(
+          "Success",
+          style: headBottomSheetText,
+        ),
+        SizedBox(
+          height: 10,
+        ),
+
+        ///Sub Text Success
+        Text("You have successfully ordered", style: descriptionBarText),
+        SizedBox(
+          height: 50,
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(80, 0, 80, 0),
+          child: InkWell(
+            onTap: () {
+              _sendDataToSecondScreen(context);
+            },
+            child: Container(
               height: 50,
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(80, 0, 80, 0),
-              child: InkWell(
-                onTap: () {
-                  _sendDataToSecondScreen(context);
-                },
-                child: Container(
-                  height: 50,
-                  decoration: BoxDecoration(
-                      color: red1, borderRadius: BorderRadius.circular(50)),
-                  child: Center(
-                    child: Text(
-                      "Order",
-                      style: textButtonBoarding,
-                    ),
-                  ),
+              decoration: BoxDecoration(
+                  color: red1, borderRadius: BorderRadius.circular(50)),
+              child: Center(
+                child: Text(
+                  "Order",
+                  style: textButtonBoarding,
                 ),
               ),
             ),
-            Spacer(
-              flex: 6,
-            ),
-          ],
+          ),
         ),
-      ),
-    );
-  }
+        Spacer(
+          flex: 6,
+        ),
+      ],
+    ),
+  );
 }

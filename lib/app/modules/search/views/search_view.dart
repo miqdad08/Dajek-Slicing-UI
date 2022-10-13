@@ -21,7 +21,7 @@ class SearchView extends GetView<SearchController> {
             ///Button Back & Search
             child: Padding(
               padding: const EdgeInsets.only(left: 30, right: 30, top: 40),
-              child: TopBody(),
+              child: SearchBarOnFocus(),
             ),
           ),
         ),
@@ -41,20 +41,6 @@ class SearchView extends GetView<SearchController> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class TopBody extends StatelessWidget {
-  const TopBody({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ///Search
-        SearchBarOnFocus(),
-      ],
     );
   }
 }

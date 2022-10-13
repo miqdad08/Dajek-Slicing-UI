@@ -20,6 +20,7 @@ class DriversStatusView extends GetView<DriversStatusController> {
   }
 }
 
+///Bottom Body
 class BottomBody extends StatefulWidget {
   const BottomBody({Key? key}) : super(key: key);
 

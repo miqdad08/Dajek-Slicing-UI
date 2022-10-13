@@ -67,67 +67,64 @@ class _SearchDriverContentState extends State<SearchDriverContent> {
         ],
       ),
       backgroundColor: darkGrey1,
-      bottomNavigationBar: BottomBody(),
+      bottomNavigationBar: _bottomBody(),
     );
   }
 }
 
-class BottomBody extends StatelessWidget {
-  const BottomBody({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 180,
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(20), topRight: Radius.circular(20)),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.5),
-              blurRadius: 5.0,
-              spreadRadius: 0.0,
-              offset: Offset(0.0, 0.0),
-            ),
-          ]),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(30, 25, 30, 30),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Search Driver...",
-              style: categoryText,
-            ),
+Widget _bottomBody (){
+  return Container(
+    height: 180,
+    decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20), topRight: Radius.circular(20)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.5),
+            blurRadius: 5.0,
+            spreadRadius: 0.0,
+            offset: Offset(0.0, 0.0),
+          ),
+        ]),
+    child: Padding(
+      padding: const EdgeInsets.fromLTRB(30, 25, 30, 30),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Search Driver...",
+            style: categoryText,
+          ),
 
-            ///Set Quantity
-            Spacer(),
+          ///Set Quantity
+          Spacer(),
 
-            ///Button Cancel
-            InkWell(
-              onTap: () {
-                Get.back();
-                Get.back();
-                Get.back();
-              },
-              child: Container(
-                width: double.infinity,
-                height: 60,
-                decoration: BoxDecoration(
-                  border: Border.all(color: red1, width: 3),
-                  borderRadius: BorderRadius.circular(50),
-                ),
-                child: Center(
-                    child: Text(
-                  "Cancel",
-                  style: foodPriceText,
-                )),
+          ///Button Cancel
+          InkWell(
+            onTap: () {
+              Get.back();
+              Get.back();
+              Get.back();
+            },
+            child: Container(
+              width: double.infinity,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(color: red1, width: 3),
+                borderRadius: BorderRadius.circular(50),
               ),
+              child: Center(
+                  child: Text(
+                    "Cancel",
+                    style: foodPriceText,
+                  )),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
-    );
-  }
+    ),
+  );
 }
+

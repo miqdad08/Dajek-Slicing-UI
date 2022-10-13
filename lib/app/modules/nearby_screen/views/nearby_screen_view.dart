@@ -19,7 +19,7 @@ class NearbyScreenView extends GetView<NearbyScreenController> {
             ///Button Back & Search
             child: Padding(
               padding: const EdgeInsets.fromLTRB(30, 40, 30, 0),
-              child: TopBody(),
+              child: _topBody(),
             ),
           ),
         ),
@@ -45,48 +45,45 @@ class NearbyScreenView extends GetView<NearbyScreenController> {
   }
 }
 
-class TopBody extends StatelessWidget {
-  const TopBody({Key? key}) : super(key: key);
+Widget _topBody(){
+  return Column(
+    children: [
+      /// InfoScreen & Back Button
+      Row(
+        children: [
+          ///Icon Back
+          IconButton(
+            onPressed: () {
+              Get.offAllNamed(Routes.FOOD_SCREEN);
+            },
+            icon: Icon(
+              Icons.arrow_back_ios,
+              size: 20,
+              color: Colors.black,
+            ),
+          ),
+          SizedBox(
+            width: 8,
+          ),
 
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        /// InfoScreen & Back Button
-        Row(
-          children: [
-            ///Icon Back
-            IconButton(
-              onPressed: () {
-                Get.offAllNamed(Routes.FOOD_SCREEN);
-              },
-              icon: Icon(
-                Icons.arrow_back_ios,
-                size: 20,
-                color: Colors.black,
+          ///Info Screen
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Nearby",
+                style: screenInfoText,
               ),
-            ),
-            SizedBox(
-              width: 8,
-            ),
+            ],
+          ),
+        ],
+      ),
+      SizedBox(height: 25),
 
-            ///Info Screen
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Nearby",
-                  style: screenInfoText,
-                ),
-              ],
-            ),
-          ],
-        ),
-        SizedBox(height: 25),
-
-        ///Search
-        SearchBar(),
-      ],
-    );
-  }
+      ///Search
+      SearchBar(),
+    ],
+  );
 }
+
+
