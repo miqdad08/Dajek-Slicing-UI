@@ -72,7 +72,7 @@ TextStyle categoryText = GoogleFonts.roboto(
 TextStyle myLocText = GoogleFonts.poppins(
     color: Colors.grey,
     fontSize: 12,
-    fontWeight: FontWeight.w400
+    fontWeight: FontWeight.w500
 );
 
 
@@ -195,4 +195,5 @@ const Color orange2 = Color(0xffFF4E4E);
 const Color lightGrey = Color(0xffFAFAFA);
 const Color peach = Color(0xffFDF3F6);
 const Color white = Color(0xffFFFFFF);
+const Color lightPeach = Color(0xffFBE9E9);
 
