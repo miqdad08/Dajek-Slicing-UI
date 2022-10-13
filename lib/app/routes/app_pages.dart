@@ -18,12 +18,16 @@ import 'package:dajek/app/modules/main_screen/bindings/main_screen_binding.dart'
 import 'package:dajek/app/modules/main_screen/views/main_screen_view.dart';
 import 'package:dajek/app/modules/nearby_screen/bindings/nearby_screen_binding.dart';
 import 'package:dajek/app/modules/nearby_screen/views/nearby_screen_view.dart';
+import 'package:dajek/app/modules/notification_screen/bindings/notification_screen_binding.dart';
+import 'package:dajek/app/modules/notification_screen/views/notification_screen_view.dart';
 import 'package:dajek/app/modules/onboarding_screen/bindings/onboarding_screen_binding.dart';
 import 'package:dajek/app/modules/onboarding_screen/views/onboarding_screen_view.dart';
 import 'package:dajek/app/modules/order_driver/bindings/order_driver_binding.dart';
 import 'package:dajek/app/modules/order_driver/views/order_driver_view.dart';
 import 'package:dajek/app/modules/payment_method/bindings/payment_method_binding.dart';
 import 'package:dajek/app/modules/payment_method/views/payment_method_view.dart';
+import 'package:dajek/app/modules/profil_screen/bindings/profil_screen_binding.dart';
+import 'package:dajek/app/modules/profil_screen/views/profil_screen_view.dart';
 import 'package:dajek/app/modules/search/bindings/search_binding.dart';
 import 'package:dajek/app/modules/search/views/search_view.dart';
 import 'package:dajek/app/modules/search_driver/bindings/search_driver_binding.dart';
@@ -142,6 +146,16 @@ class AppPages {
       name: _Paths.CHAT_SCREEN,
       page: () => ChatScreenView(),
       binding: ChatScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.NOTIFICATION_SCREEN,
+      page: () => NotificationScreenView(),
+      binding: NotificationScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFIL_SCREEN,
+      page: () => ProfilScreenView(),
+      binding: ProfilScreenBinding(),
     ),
   ];
 }

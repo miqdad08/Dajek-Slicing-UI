@@ -1,4 +1,6 @@
 import 'package:dajek/app/modules/home/views/home_view.dart';
+import 'package:dajek/app/modules/notification_screen/views/notification_screen_view.dart';
+import 'package:dajek/app/modules/profil_screen/views/profil_screen_view.dart';
 import 'package:dajek/app/modules/transaction/views/transaction_view.dart';
 import 'package:dajek/helper/constant.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +36,13 @@ class _MainScreenState extends State<MainScreen> {
         return HomeView();
         break;
       case 1:
+        return NotificationScreenView();
+        break;
+      case 2:
         return TransactionView();
+        break;
+      case 3:
+        return ProfilScreenView();
         break;
       default:
         return HomeView();
@@ -59,11 +67,15 @@ class _MainScreenState extends State<MainScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconHome.transaction,),
+            icon: Icon(IconHome.notification,),
+            label: 'Notif',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(IconHome.transaction),
             label: 'Transaction',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.compare_arrows),
+            icon: Icon(IconHome.profil2),
             label: 'Transaction',
           ),
         ],

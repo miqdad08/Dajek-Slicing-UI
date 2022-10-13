@@ -9,8 +9,7 @@ class TransactionView extends GetView<TransactionController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TransactionView'),
-        centerTitle: true,
+        title: Text('Transaction'),
       ),
       body: Center(
         child: Text(
@@ -19,5 +18,19 @@ class TransactionView extends GetView<TransactionController> {
         ),
       ),
     );
+  }
+}
+
+class TabBarMenu extends StatefulWidget {
+  const TabBarMenu({Key? key}) : super(key: key);
+
+  @override
+  State<TabBarMenu> createState() => _TabBarMenuState();
+}
+
+class _TabBarMenuState extends State<TabBarMenu> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
