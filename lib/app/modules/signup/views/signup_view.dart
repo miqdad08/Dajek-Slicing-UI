@@ -9,19 +9,19 @@ import '../controllers/signup_controller.dart';
 class SignupView extends GetView<SignupController> {
   @override
   Widget build(BuildContext context) {
-    return LogoutContent();
+    return SignupContent();
   }
 }
 
-///StatefulWidget Logout
-class LogoutContent extends StatefulWidget {
-  const LogoutContent({Key? key}) : super(key: key);
+///StatefulWidget Signup
+class SignupContent extends StatefulWidget {
+  const SignupContent({Key? key}) : super(key: key);
 
   @override
-  State<LogoutContent> createState() => _LogoutContentState();
+  State<SignupContent> createState() => _SignupContentState();
 }
 
-class _LogoutContentState extends State<LogoutContent> {
+class _SignupContentState extends State<SignupContent> {
   bool _isObscure = true;
 
   @override
