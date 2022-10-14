@@ -56,6 +56,7 @@ class _SearchBarOnFocusState extends State<SearchBarOnFocus> {
               width: 10,
             ),
             Text("Find your favorite food today...", style: hintSearchBarText,),
+             Spacer(),
             IconButton(onPressed: (){
               Get.back();
             }, icon: Icon(Icons.close)),
